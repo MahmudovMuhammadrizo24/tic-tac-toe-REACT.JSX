@@ -1,0 +1,35 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.cont{
+    display: flex;
+}
+.big{
+    width: 200px;
+    height: 300px;
+}
+.game-board{
+    width: 150px;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: 1px solid black;
+    margin: 30px;
+    .box{
+        background-color: white;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .box:focus{
+        background-color: rgb(169, 167, 167);
+    }
+}
