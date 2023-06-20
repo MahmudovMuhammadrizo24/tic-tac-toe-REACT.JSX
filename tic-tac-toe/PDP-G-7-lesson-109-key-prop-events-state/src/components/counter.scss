@@ -33,3 +33,16 @@
         background-color: rgb(169, 167, 167);
     }
 }
+.game-info{
+    width: 200px;
+    
+    .info{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+        gap: 5px;
+    }
+}
