@@ -1,0 +1,23 @@
+
+.table{
+    width: 70%;
+    height: 100%;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+    padding: 5px;
+   
+}
+.tableBox{
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 56px;
+    font-weight: 600;
+}.tableBox:active{
+    transform: scale(0.96);
+}
