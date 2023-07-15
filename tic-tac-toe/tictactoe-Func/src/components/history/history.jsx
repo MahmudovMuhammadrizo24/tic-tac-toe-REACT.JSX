@@ -1,13 +1,20 @@
-import { Component } from "react";
 
+
+import React from "react";
 import "./history.scss";
-class History extends Component {
-    state = {}
-    render() {
-        return (
-            <div className="history"></div>
-        );
-    }
-}
+const History = ({ historyData }) => {
+    return (
+        <div className="history">
+            <h4 className="gameHistory">Move History</h4>
+            <div className="btnBox">
+                {historyData.map((data, index) => (
+                    <button className="btn btn-outline-primary" key={index}>
+                        Move {index + 1}
+                    </button>
+                ))}
+            </div>
+        </div>
+    );
+};
 
 export default History;
